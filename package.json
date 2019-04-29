@@ -1,6 +1,6 @@
 {
   "name": "svg-util",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "The helper utils for SVG",
   "keywords": [
     "svg",
@@ -37,7 +37,9 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "prepush": "npm run test:prod && npm run build",
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
