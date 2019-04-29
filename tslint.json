@@ -21,6 +21,6 @@
     "member-access": false,
     "no-consecutive-blank-lines": false,
     "max-line-length": false,
-    "strict-type-predicates": false,
+    "strict-type-predicates": false
   }
 }
