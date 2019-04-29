@@ -1,8 +1,13 @@
 {
   "name": "svg-util",
-  "version": "The helper utils for SVG",
-  "description": "",
-  "keywords": [],
+  "version": "0.1.0",
+  "description": "The helper utils for SVG",
+  "keywords": [
+    "svg",
+    "filter",
+    "util",
+    "defs"
+  ],
   "main": "dist/svg-util.umd.js",
   "module": "dist/svg-util.es5.js",
   "typings": "dist/types/svg-util.d.ts",
