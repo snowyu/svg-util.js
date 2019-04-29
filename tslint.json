@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "arrow-parens": false,
+    "curly": false,
+    "quotemark": [true, "single"],
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": false,
+    "prefer-for-of": false,
+    "member-access": false,
+    "no-consecutive-blank-lines": false,
+    "max-line-length": false,
+    "strict-type-predicates": false,
+  }
+}
