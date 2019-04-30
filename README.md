@@ -13,6 +13,8 @@ The helper utils(filter, clip etc...) for Programming SVG.
       * `stop-color`: The color attribute indicates what color to use at that gradient stop.
       * `stop-opacity`: defines the opacity of a given gradient stop.
   * `GrayscaleFilter` Class: the reused grayscale filter.
+  * `BrightnessFilter` Class: adjust brightness filter.
+    * slope(*number*):  >1 improve brightness; <1 reduce brightness: color*slope
   * `DropshadowFilter` Class: the reused drop shadow filter.
     **NOTE:** You should wrapper it to a group if you wanna apply multi-filters on one svg element.
     * id(*string*): optional to reuse the dropshadow filter.
