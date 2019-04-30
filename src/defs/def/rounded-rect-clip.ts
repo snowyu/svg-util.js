@@ -122,36 +122,3 @@ function getId(width, height, id?) {
   const result = `${id}${width}_${height}`
   return result
 }
-
-export function setRx(id: string | Element, rx: number) {
-  let vEl: Element | null
-  if (typeof id === 'string') {
-    const GDefs = new SvgDefs()
-    vEl = GDefs.get(id, 'clipPath')
-  } else vEl = id
-  if (vEl && vEl.children.length) {
-    // vEl = vEl.querySelector('rect')
-    vEl = vEl.children[0]
-    setAttributes(vEl, { rx })
-  } else vEl = null
-  return vEl
-}
-
-function getRx(id: string | Element): number | undefined {
-  let vEl: Element | null
-  if (typeof id === 'string') {
-    const GDefs = new SvgDefs()
-    vEl = GDefs.get(id, 'clipPath')
-    if (!vEl) throw new Error(`can not find ${id} to getRX`)
-  } else {
-    vEl = id
-  }
-
-  if (vEl && vEl.children.length) {
-    // vEl = vEl.querySelector('rect')
-    vEl = vEl.children[0]
-    const result: any = vEl.getAttribute('rx')
-    // if (result) result = parseFloat(result);
-    return result
-  }
-}
