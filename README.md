@@ -1,6 +1,6 @@
 # SVG util
 
-The helper utils for SVG.
+The helper utils(filter, clip etc...) for Programming SVG.
 
 
 ## Classes
