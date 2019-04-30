@@ -7,6 +7,11 @@ The helper utils(filter, clip etc...) for Programming SVG.
 
 * `SvgDefs` Class: to manage all reused elements in `defs` of an invisibale SVG.
 * `SvgDef` Abstract Class: The reused element abstract class.
+  * `LinearGradient` Class: the reused linear gradient to fill.
+    * `stops`(*IGradientColor*): defines the ramp of colors to use on a gradient
+      * `offset`:  defined the offset of a given gradient stop. 0.0-1.0 or 0%-100%
+      * `stop-color`: The color attribute indicates what color to use at that gradient stop.
+      * `stop-opacity`: defines the opacity of a given gradient stop.
   * `GrayscaleFilter` Class: the reused grayscale filter.
   * `DropshadowFilter` Class: the reused drop shadow filter.
     **NOTE:** You should wrapper it to a group if you wanna apply multi-filters on one svg element.

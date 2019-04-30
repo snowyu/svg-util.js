@@ -1,3 +1,5 @@
 export * from './dropshadow-filter'
 export * from './rounded-rect-clip'
 export * from './grayscale-filter'
+export * from './gradient-stop'
+export * from './linear-gradient'
