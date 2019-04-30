@@ -7,6 +7,7 @@ The helper utils for SVG.
 
 * `SvgDefs` Class: to manage all reused elements in `defs` of an invisibale SVG.
 * `SvgDef` Abstract Class: The reused element abstract class.
+  * `GrayscaleFilter` Class: the reused grayscale filter.
   * `DropshadowFilter` Class: the reused drop shadow filter.
     **NOTE:** You should wrapper it to a group if you wanna apply multi-filters on one svg element.
     * id(*string*): optional to reuse the dropshadow filter.
