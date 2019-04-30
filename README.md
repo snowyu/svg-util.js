@@ -12,6 +12,9 @@ The helper utils(filter, clip etc...) for Programming SVG.
       * `offset`:  defined the offset of a given gradient stop. 0.0-1.0 or 0%-100%
       * `stop-color`: The color attribute indicates what color to use at that gradient stop.
       * `stop-opacity`: defines the opacity of a given gradient stop.
+  * `GlossGlassFilter` Class: the gloss glass filter.
+    * color(*string*): defaults to `#bbbbbb`
+    * specular(*number*): defaults to `12`
   * `GrayscaleFilter` Class: the reused grayscale filter.
   * `BrightnessFilter` Class: adjust brightness filter.
     * slope(*number*):  >1 improve brightness; <1 reduce brightness: color*slope
