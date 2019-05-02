@@ -83,6 +83,7 @@ export function getRoundedRectClip(
     }
   } else {
     FRoundedRectClip.id = vId
+    // FRoundedRect.id = GDefs.getId(vId, 'clipPath') + '-rect';
     FRoundedRect.width = w
     FRoundedRect.height = h
     if (rx) FRoundedRect.rx = rx
