@@ -31,3 +31,13 @@ The helper utils(filter, clip etc...) for Programming SVG.
     * rx(*number*): the 0-1 float number to rounded corner radius for x.
     * ry(*number*): optional, the 0-1 float number to rounded corner radius for y(ry = rx if no settings).
     * **note**: the same `id` and the same `width/height ratio` will share the same `rounded rect clip`.
+  * `PathClip` Class: the reused path clip.
+    * id(*string*): optional to reuse the path clip.
+    * path(*string*): defines a path to be drawn. see [`d` attribute](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d)
+      * **note**: the `clipPathUnits` is 'objectBoundingBox'.
+
+## utils
+
+* `domjson`: used to convert the svg dom to json and reverse.
+* `svg-path`: convert svg shape to the path string.
+
