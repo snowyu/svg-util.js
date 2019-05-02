@@ -16,6 +16,7 @@ The helper utils(filter, clip etc...) for Programming SVG.
     * color(*string*): defaults to `#bbbbbb`
     * specular(*number*): defaults to `12`
   * `GrayscaleFilter` Class: the reused grayscale filter.
+  * `LighterFilter` Class: the reused lighter filter(in feComposite).
   * `BrightnessFilter` Class: adjust brightness filter.
     * slope(*number*):  >1 improve brightness; <1 reduce brightness: color*slope
   * `DropshadowFilter` Class: the reused drop shadow filter.
