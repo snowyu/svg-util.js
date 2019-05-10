@@ -69,6 +69,8 @@
     "@commitlint/config-conventional": "^7.5.0",
     "@types/jest": "^24.0.12",
     "@types/node": "^11.13.8",
+    "babel-jest": "^24.8.0",
+    "canvas": "^2.5.0",
     "colors": "^1.3.3",
     "commitizen": "^3.1.1",
     "coveralls": "^3.0.3",
@@ -77,6 +79,7 @@
     "husky": "^2.1.0",
     "jest": "^24.7.1",
     "jest-config": "^24.7.1",
+    "jest-environment-jsdom-with-canvas": "github:snowyu/jest-environment-jsdom-with-canvas",
     "lint-staged": "^8.1.5",
     "lodash.camelcase": "^4.3.0",
     "prettier": "^1.17.0",
@@ -104,5 +107,7 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
   }
 }
