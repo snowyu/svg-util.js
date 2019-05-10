@@ -1,0 +1,5 @@
+export { default as textWrap } from './textWrap'
+export { trim, trimLeft, trimRight } from './trim'
+export { default as stringify } from './stringify'
+export { default as textWidth } from './textWidth'
+export { default as textSplit } from './textSplit'
