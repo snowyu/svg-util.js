@@ -1,4 +1,4 @@
-import { toJSON, toDOM } from '../src/utils/domjson'
+import { toJSON, toDOM } from '../../src/utils/domjson'
 
 describe('domjson', () => {
   describe('toJSON', () => {
