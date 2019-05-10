@@ -1,4 +1,4 @@
-import { path } from '../src/utils/svg-path'
+import { path } from '../src/svg-path'
 
 describe('svg-path', () => {
   describe('rect', () => {
