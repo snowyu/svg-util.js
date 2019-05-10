@@ -1,5 +1,9 @@
 # SVG util
 
+[![Build Status](https://img.shields.io/travis/snowyu/svg-util.js/master.png)](http://travis-ci.org/snowyu/svg-util.js)
+[![downloads](https://img.shields.io/npm/dm/svg-util.svg)](https://npmjs.org/package/svg-util)
+[![license](https://img.shields.io/npm/l/svg-util.svg)](https://npmjs.org/package/svg-util)
+
 The helper utils(filter, clip etc...) for Programming SVG.
 
 
