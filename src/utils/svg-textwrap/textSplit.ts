@@ -12,6 +12,10 @@ export default function(sentence: string) {
   // return splitStr(sentence);
 }
 
+// import GraphemeSplitter from 'grapheme-splitter';
+// splitter = new GraphemeSplitter();
+// return splitter.splitGraphemes(sentence);
+
 // import { LineBreaker } from 'linebreak-ts';
 // import {default as LineBreaker} from '@craigmorton/linebreak';
 
