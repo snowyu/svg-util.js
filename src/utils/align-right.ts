@@ -4,7 +4,7 @@
  * @param rectSize the rect size
  * @param offset the offset
  */
-export function alignRight(textSize, rectSize, offset) {
+export function alignRight(textSize: number, rectSize: number, offset?: number) {
   offset = Number(offset) || 0
   return rectSize - textSize + offset
 }
