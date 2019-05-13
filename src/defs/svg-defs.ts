@@ -39,7 +39,7 @@ export class SvgDefs {
     const owner = aParent.ownerDocument || document
     const result = owner.createElementNS('http://www.w3.org/2000/svg', aName)
     if (aId) result.setAttribute('id', aId)
-    aParent.append(result)
+    aParent.appendChild(result)
     return result
   }
 
