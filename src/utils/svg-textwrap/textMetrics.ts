@@ -11,13 +11,15 @@ function htmlDecode(input) {
 /**
  *  @function textMetrics
  *  @desc Given a text string, returns the predicted pixel textMetrics of the string when placed into DOM.
+ *    fontHeight = fontBoundingBoxAscent + fontBoundingBoxDescent;      // need polyfill
+ *    actualHeight = actualBoundingBoxAscent + actualBoundingBoxDescent;// need polyfill
  *  @param {TextMetrics|Array} text Can be either a single string or an array of strings to analyze.
  *  @param {Object} [style] An object of CSS font styles to apply. Accepts any of the valid [CSS font property](http://www.w3schools.com/cssref/pr_font_font.asp) values.
  */
 export default function(text: string | string[], style?): TextMetrics | TextMetrics[] {
   style = Object.assign(
     {
-      'font-size': 10,
+      'font-size': 16,
       'font-family': 'sans-serif',
       'font-style': 'normal',
       'font-weight': 400,
