@@ -25,7 +25,14 @@ const attrDataset = {
   }
 }
 
+let hasDataset
+try {
+  hasDataset = SVGElement.prototype.dataset
+} catch (err) {
+  // on Chrome has dataset visit prototype.dataset will raise error.
+  hasDataset = true
+}
 /**
  * polyfill the svg element dataset.
  */
-export const dataset = SVGElement.prototype.dataset === undefined ? attrDataset : nativeDataset
+export const dataset = hasDataset ? nativeDataset : attrDataset
