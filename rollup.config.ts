@@ -16,7 +16,13 @@ export default {
     { file: pkg.module, format: 'es', sourcemap: true },
   ],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
+  // external tells Rollup "it's ok that you can't resolve these modules, don't try to bundle them but rather leave their import statements in place".
   external: ['lodash'],
+  // the browser's global variable mapping `external` modules.
+  globals: {
+    // map 'lodash' package to '_' global variable.
+    // 'lodash': '_',
+  },
   watch: {
     include: 'src/**',
   },
