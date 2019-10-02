@@ -12,17 +12,19 @@ const libraryName = 'svg-util'
 export default {
   input: `src/index.ts`,
   output: [
-    { file: pkg.main, name: camelCase(libraryName), format: 'umd', sourcemap: true },
+    {
+      file: pkg.main, name: camelCase(libraryName), format: 'umd', sourcemap: true,
+      globals: {
+        // map 'lodash' package to '_' global variable.
+        'lodash': '_',
+      },
+    },
     { file: pkg.module, format: 'es', sourcemap: true },
   ],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
   // external tells Rollup "it's ok that you can't resolve these modules, don't try to bundle them but rather leave their import statements in place".
   external: ['lodash'],
   // the browser's global variable mapping `external` modules.
-  globals: {
-    // map 'lodash' package to '_' global variable.
-    // 'lodash': '_',
-  },
   watch: {
     include: 'src/**',
   },
