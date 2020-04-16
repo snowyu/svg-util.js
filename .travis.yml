@@ -10,12 +10,31 @@ node_js:
   - '10'
   - '11'
   - '12'
+  - '13'
+install:
+  - npm install
 script:
   - npm run test:prod && npm run build
-after_success:
-  - npm run travis-deploy-once "npm run report-coverage"
-  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm run travis-deploy-once "npm run deploy-docs"; fi
-  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm run travis-deploy-once "npm run semantic-release"; fi
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+jobs:
+  include:
+    - stage: report-coverage
+      node_js: "10"
+      script:
+        - npm run test:prod
+        - npm run report-coverage
+    - stage: release
+      if: branch = master AND type != pull_request
+      node_js: lts/* #"10"
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
+      # script:
+      #   - npm run build
+      #   - npm run deploy-docs && npm run semantic-release
