@@ -20,7 +20,8 @@ module.exports = {
     'ts',
     'tsx'
   ],
-  testEnvironment: 'jsdom-with-canvas',
+  testEnvironment: 'jsdom',
+  // testEnvironment: 'jsdom-with-canvas',
   transform: {
     // '^.+\\.vue$': 'vue-jest',
     // '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
