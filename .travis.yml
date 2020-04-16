@@ -19,7 +19,7 @@ branches:
 jobs:
   include:
     - stage: report-coverage
-      node_js: "10"
+      node_js: lts/*
       script:
         - npm run test:prod
         - npm run report-coverage
