@@ -1,7 +1,8 @@
 # SVG util
 
 [![npm](https://img.shields.io/npm/v/svg-util.svg)](https://npmjs.org/package/svg-util)
-[![Build Status](https://img.shields.io/travis/snowyu/svg-util.js/master.png)](http://travis-ci.org/snowyu/svg-util.js)
+[![Greenkeeper badge](https://snyk.io/test/github/snowyu/svg-util.js/badge.svg)](https://snyk.io/test/github/snowyu/svg-util.js)
+[![Build Status](https://travis-ci.org/snowyu/svg-util.js.svg?branch=master)](https://travis-ci.org/snowyu/svg-util.js)
 [![downloads](https://img.shields.io/npm/dm/svg-util.svg)](https://npmjs.org/package/svg-util)
 [![license](https://img.shields.io/npm/l/svg-util.svg)](https://npmjs.org/package/svg-util)
 
